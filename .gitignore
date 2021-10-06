@@ -1,4 +1,6 @@
 # .gitignore 
 node_modules 
 tmp
-bin
+bin/easyPlayer
+bin/getFirstAvailbaleAudioDeviceId
+bin/mount
