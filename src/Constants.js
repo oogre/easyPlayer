@@ -2,7 +2,7 @@
   easyPlayer - Constants.js
   @author Evrard Vincent (vincent@ogre.be)
   @Date:   2021-01-04 16:33:06
-  @Last Modified time: 2021-10-06 12:45:33
+  @Last Modified time: 2021-10-06 16:42:36
 \*----------------------------------------*/
 
 export const ProcessType = {
