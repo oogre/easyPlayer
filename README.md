@@ -18,7 +18,7 @@ It auto mount usb storage key named "FelixLuque" (you can change config in src/C
 
 The first mp4/wav file found select the mode (dual/single/no-screen)
 
-```
+```lolcode
 if file is "mp4" : 
     if filePath contains "dual-screen"
         if filePath contains "master"
@@ -54,6 +54,9 @@ Enter the easyPlayer directory, install node dependencies, and build
 cd easyPlayer
 npm install
 npm run build
+# for install 
+sudo npm run install
+
 ```
 
 ## Run
@@ -64,7 +67,8 @@ ln -s EASYPLAYER_PATH/runEasyPlayer /etc/init.d/runEasyPlayer
 
 # run on demand
 ./EASYPLAYER_PATH/runEasyPlayer start
-
+#or
+easyPlayer
 # stop on demand
 ./EASYPLAYER_PATH/runEasyPlayer stop
 ```
