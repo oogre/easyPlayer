@@ -3,7 +3,7 @@
   startVideoPlayer - startVideoPlayer.js
   @author Evrard Vincent (vincent@ogre.be)
   @Date:   2020-12-13 17:24:39
-  @Last Modified time: 2021-10-12 12:55:01
+  @Last Modified time: 2021-10-12 12:55:52
 \*----------------------------------------*/
 import { exec } from "child_process";
 import { program } from 'commander';
@@ -27,7 +27,7 @@ program
 	.option('-v, --verbose <verbose>', 'verbose', false)
 	.action(async ({verbose}) => {
 		try{
-			//await run([MOUNT_PATH], {}, verbose);	
+			await run([MOUNT_PATH], {}, verbose);	
 			await new Promise( resolve => setTimeout(resolve, 5000) );
 			let [type, path, filename] = await getProcessType(DATA_DIR, ProcessType);
 			switch(type){
