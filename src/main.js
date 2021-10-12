@@ -3,7 +3,7 @@
   startVideoPlayer - startVideoPlayer.js
   @author Evrard Vincent (vincent@ogre.be)
   @Date:   2020-12-13 17:24:39
-  @Last Modified time: 2021-10-12 12:48:20
+  @Last Modified time: 2021-10-12 12:52:45
 \*----------------------------------------*/
 import { exec } from "child_process";
 import { program } from 'commander';
@@ -48,8 +48,7 @@ program
 				break;
 				case ProcessType.AUDIO : {
 					console.log("AUDIO");
-					console.log(`${PLAY_PATH} --vol 3000 ${path}/${filename}`);
-					run([PLAY_PATH, filename], {cwd : path}, verbose);
+					run([PLAY_PATH, `--vol 3000`, filename], {cwd : path}, verbose);
 				}
 				break;
 				default : 
