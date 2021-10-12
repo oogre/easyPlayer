@@ -4,7 +4,7 @@
   startVideoPlayer - startVideoPlayer.js
   @author Evrard Vincent (vincent@ogre.be)
   @Date:   2020-12-13 17:24:39
-  @Last Modified time: 2021-10-06 15:17:18
+  @Last Modified time: 2021-10-12 12:08:11
 \*----------------------------------------*/
 "use strict";
 
@@ -57,6 +57,7 @@ _commander.program.option('-v, --verbose <verbose>', 'verbose', false).action(as
       case _Constants.ProcessType.AUDIO:
         {
           console.log("AUDIO");
+          console.log(`${_Constants.PLAY_PATH} --vol 3000 ${path}/${filename}`);
           (0, _tools.run)([_Constants.PLAY_PATH, `--vol 3000`, filename], {
             cwd: path
           }, verbose);
