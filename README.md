@@ -39,7 +39,7 @@ Install nodejs 14, Git and dependencies :
 sudo apt update
 sudo apt upgrade
 curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
-sudo apt install nodejs git python3 omxplayer
+sudo apt install nodejs
 ```
 
 Download easyPlayer

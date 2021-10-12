@@ -2,13 +2,16 @@
 # @Author: Evrard Vincent
 # @Date:   2021-10-12 15:09:56
 # @Last Modified by:   oogre
-# @Last Modified time: 2021-10-12 15:41:00
+# @Last Modified time: 2021-10-12 16:04:45
 
 rm /usr/local/bin/play
 rm /usr/local/bin/omxplayer-sync
 rm /usr/local/bin/customount
 rm /usr/local/bin/getFirstAvailbaleAudioDeviceId
 rm /usr/local/bin/easyPlayer
+
+
+su - pi -c "/home/pi/easyPlayer/build.sh";
 
 ln -s /home/pi/easyPlayer/bin/play /usr/local/bin/play
 ln -s /home/pi/easyPlayer/bin/omxplayer-sync /usr/local/bin/omxplayer-sync
