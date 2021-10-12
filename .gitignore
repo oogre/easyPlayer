@@ -1,6 +1,6 @@
 # .gitignore 
 node_modules 
 tmp
-bin/easyPlayer
-bin/getFirstAvailbaleAudioDeviceId
-bin/mount
+bin
+!bin/omxplayer-sync
+!bin/play
