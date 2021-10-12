@@ -2,7 +2,7 @@
 # @Author: Evrard Vincent
 # @Date:   2020-12-23 22:10:56
 # @Last Modified by:   oogre
-# @Last Modified time: 2021-10-12 12:03:14
+# @Last Modified time: 2021-10-12 12:09:46
 
 ./node_modules/.bin/babel --verbose --out-dir tmp src
 mv tmp/* bin/ 
@@ -10,6 +10,7 @@ mv bin/getFirstAvailbaleAudioDeviceId.js bin/getFirstAvailbaleAudioDeviceId
 mv bin/main.js bin/main
 mv bin/mount.js bin/mount
 
+chmod 755 bin/*
 #pkg -t node14-linuxstatic-armv7 -o bin/easyPlayer tmp/main.js
 #pkg -t node14-linuxstatic-armv7 -o bin/getFirstAvailbaleAudioDeviceId tmp/getFirstAvailbaleAudioDeviceId.js
 #pkg -t node14-linuxstatic-armv7 -o bin/mount tmp/mount.js
