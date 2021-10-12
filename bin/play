@@ -18,7 +18,7 @@ fi
 echo "bonjour"
 echo "$audioDeviceId";
 
-omxplayer --no-osd --loop --no-keys --display=2 -o alsa:hw:$audioDeviceId "$@" > /dev/null 2>&1 &
+omxplayer --no-osd --loop --no-keys --display=2 -o alsa:hw:$audioDeviceId "$@" # > /dev/null 2>&1 &
 
 # if [ -z "$2" ]
 # 	then
