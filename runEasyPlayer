@@ -11,6 +11,7 @@
 ### END INIT INFO
 
 ### sym link >>> /etc/init.d/runEasyPlayer
+
 export PATH=$PATH:/usr/bin;
 
 case "$1" in
